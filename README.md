@@ -14,6 +14,13 @@ A dark VS Code theme inspired by the aesthetic of Tron: Ares movie, featuring a 
 - Semantic highlighting support
 - Customized UI elements for a cohesive look
 
+## Screenshots
+
+<div align="center">
+  <img src="media/screenshots/mock-screenshot-v0.1.2.png" alt="Tron Ares Theme Screenshot" width="800">
+  <p><em>VS Code with Tron Ares theme applied</em></p>
+</div>
+
 ## Installation
 
 1. Open VS Code
