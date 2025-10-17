@@ -1,0 +1,22 @@
+{
+  "name": "tron-ares",
+  "displayName": "tron-ares",
+  "description": "Color theme matching the vibe of the Tron: Ares movie",
+  "version": "0.1.0",
+  "publisher": "eschalk0",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Tron: Ares",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tron-ares-color-theme.json"
+      }
+    ]
+  }
+}
