@@ -1,5 +1,9 @@
 # Tron Ares Theme
 
+<div align="center">
+  <img src="media/icon.png" alt="Tron Ares Theme Icon" width="128" height="128">
+</div>
+
 A dark VS Code theme inspired by the aesthetic of Tron: Ares movie, featuring a red and dark color scheme that creates an immersive coding experience.
 
 ## Features

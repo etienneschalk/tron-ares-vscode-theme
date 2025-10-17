@@ -1,0 +1,185 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark background gradient -->
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#1b0000;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#0d0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Enhanced neon glow effects -->
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Circuit pattern gradients -->
+    <linearGradient id="primaryCircuit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e06c75;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#c25656;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#940000;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <linearGradient id="secondaryCircuit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#e06c75;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#c25656;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="128" height="128" fill="url(#bgGradient)" rx="16"/>
+  
+  <!-- Dense circuit board base pattern -->
+  <g opacity="0.2">
+    <!-- Horizontal circuit lines -->
+    <line x1="16" y1="24" x2="112" y2="24" stroke="#240000" stroke-width="0.8"/>
+    <line x1="16" y1="32" x2="112" y2="32" stroke="#240000" stroke-width="0.8"/>
+    <line x1="16" y1="40" x2="112" y2="40" stroke="#240000" stroke-width="0.8"/>
+    <line x1="16" y1="48" x2="112" y2="48" stroke="#240000" stroke-width="0.8"/>
+    <line x1="16" y1="56" x2="112" y2="56" stroke="#240000" stroke-width="0.8"/>
+    <line x1="16" y1="64" x2="112" y2="64" stroke="#240000" stroke-width="0.8"/>
+    <line x1="16" y1="72" x2="112" y2="72" stroke="#240000" stroke-width="0.8"/>
+    <line x1="16" y1="80" x2="112" y2="80" stroke="#240000" stroke-width="0.8"/>
+    <line x1="16" y1="88" x2="112" y2="88" stroke="#240000" stroke-width="0.8"/>
+    <line x1="16" y1="96" x2="112" y2="96" stroke="#240000" stroke-width="0.8"/>
+    <line x1="16" y1="104" x2="112" y2="104" stroke="#240000" stroke-width="0.8"/>
+    
+    <!-- Vertical circuit lines -->
+    <line x1="24" y1="16" x2="24" y2="112" stroke="#240000" stroke-width="0.8"/>
+    <line x1="32" y1="16" x2="32" y2="112" stroke="#240000" stroke-width="0.8"/>
+    <line x1="40" y1="16" x2="40" y2="112" stroke="#240000" stroke-width="0.8"/>
+    <line x1="48" y1="16" x2="48" y2="112" stroke="#240000" stroke-width="0.8"/>
+    <line x1="56" y1="16" x2="56" y2="112" stroke="#240000" stroke-width="0.8"/>
+    <line x1="64" y1="16" x2="64" y2="112" stroke="#240000" stroke-width="0.8"/>
+    <line x1="72" y1="16" x2="72" y2="112" stroke="#240000" stroke-width="0.8"/>
+    <line x1="80" y1="16" x2="80" y2="112" stroke="#240000" stroke-width="0.8"/>
+    <line x1="88" y1="16" x2="88" y2="112" stroke="#240000" stroke-width="0.8"/>
+    <line x1="96" y1="16" x2="96" y2="112" stroke="#240000" stroke-width="0.8"/>
+    <line x1="104" y1="16" x2="104" y2="112" stroke="#240000" stroke-width="0.8"/>
+  </g>
+  
+  <!-- Main symmetrical circuit pattern - enhanced with more complexity -->
+  <g filter="url(#strongGlow)" stroke="url(#primaryCircuit)" stroke-width="2.5" fill="none">
+    <!-- Central diamond circuit -->
+    <path d="M 64 24 L 80 40 L 64 56 L 48 40 Z" stroke="#e06c75"/>
+    <path d="M 64 72 L 80 88 L 64 104 L 48 88 Z" stroke="#e06c75"/>
+    
+    <!-- Symmetrical horizontal connections -->
+    <path d="M 32 32 L 48 32 L 48 48 L 64 48 L 64 32 L 80 32 L 80 48 L 96 48" stroke="#c25656"/>
+    <path d="M 32 80 L 48 80 L 48 96 L 64 96 L 64 80 L 80 80 L 80 96 L 96 96" stroke="#c25656"/>
+    
+    <!-- Vertical spine -->
+    <path d="M 64 16 L 64 32 L 64 48 L 64 64 L 64 80 L 64 96 L 64 112" stroke="#e06c75"/>
+    
+    <!-- Cross connections -->
+    <path d="M 32 48 L 48 48 L 48 64 L 32 64" stroke="#c25656"/>
+    <path d="M 80 48 L 96 48 L 96 64 L 80 64" stroke="#c25656"/>
+    <path d="M 32 64 L 48 64 L 48 80 L 32 80" stroke="#c25656"/>
+    <path d="M 80 64 L 96 64 L 96 80 L 80 80" stroke="#c25656"/>
+  </g>
+  
+  <!-- Secondary circuit layer with different glow -->
+  <g filter="url(#neonGlow)" stroke="url(#secondaryCircuit)" stroke-width="1.5" fill="none" opacity="0.8">
+    <!-- Diagonal circuit patterns -->
+    <path d="M 24 24 L 40 40 L 56 24 L 72 40 L 88 24 L 104 40" stroke="#ff6b6b"/>
+    <path d="M 24 88 L 40 72 L 56 88 L 72 72 L 88 88 L 104 72" stroke="#ff6b6b"/>
+    
+    <!-- Inner diamond patterns -->
+    <path d="M 40 40 L 56 56 L 72 40 L 88 56" stroke="#e06c75"/>
+    <path d="M 40 72 L 56 88 L 72 72 L 88 88" stroke="#e06c75"/>
+    
+    <!-- Corner connections -->
+    <path d="M 24 24 L 24 40 L 40 24" stroke="#c25656"/>
+    <path d="M 104 24 L 104 40 L 88 24" stroke="#c25656"/>
+    <path d="M 24 104 L 24 88 L 40 104" stroke="#c25656"/>
+    <path d="M 104 104 L 104 88 L 88 104" stroke="#c25656"/>
+  </g>
+  
+  <!-- Enhanced circuit nodes/connectors with varying sizes -->
+  <g fill="#e06c75">
+    <!-- Large central nodes -->
+    <circle cx="64" cy="40" r="4" filter="url(#strongGlow)"/>
+    <circle cx="64" cy="88" r="4" filter="url(#strongGlow)"/>
+    
+    <!-- Medium nodes -->
+    <circle cx="32" cy="32" r="3" filter="url(#neonGlow)"/>
+    <circle cx="48" cy="48" r="3" filter="url(#neonGlow)"/>
+    <circle cx="80" cy="48" r="3" filter="url(#neonGlow)"/>
+    <circle cx="96" cy="32" r="3" filter="url(#neonGlow)"/>
+    <circle cx="32" cy="80" r="3" filter="url(#neonGlow)"/>
+    <circle cx="48" cy="96" r="3" filter="url(#neonGlow)"/>
+    <circle cx="80" cy="96" r="3" filter="url(#neonGlow)"/>
+    <circle cx="96" cy="80" r="3" filter="url(#neonGlow)"/>
+    
+    <!-- Small corner nodes -->
+    <circle cx="24" cy="24" r="2" filter="url(#neonGlow)"/>
+    <circle cx="104" cy="24" r="2" filter="url(#neonGlow)"/>
+    <circle cx="24" cy="104" r="2" filter="url(#neonGlow)"/>
+    <circle cx="104" cy="104" r="2" filter="url(#neonGlow)"/>
+    
+    <!-- Additional symmetrical nodes -->
+    <circle cx="40" cy="40" r="2.5" filter="url(#neonGlow)"/>
+    <circle cx="88" cy="40" r="2.5" filter="url(#neonGlow)"/>
+    <circle cx="40" cy="88" r="2.5" filter="url(#neonGlow)"/>
+    <circle cx="88" cy="88" r="2.5" filter="url(#neonGlow)"/>
+  </g>
+  
+  <!-- Enhanced corner accent elements -->
+  <g fill="none" stroke="#940000" stroke-width="1.5" opacity="0.7" filter="url(#neonGlow)">
+    <rect x="8" y="8" width="20" height="20" rx="3"/>
+    <rect x="100" y="8" width="20" height="20" rx="3"/>
+    <rect x="8" y="100" width="20" height="20" rx="3"/>
+    <rect x="100" y="100" width="20" height="20" rx="3"/>
+  </g>
+  
+  <!-- Central geometric elements with enhanced symmetry -->
+  <g fill="none" stroke="#e06c75" stroke-width="2" filter="url(#strongGlow)">
+    <!-- Top and bottom diamonds -->
+    <polygon points="64,16 76,28 64,40 52,28" opacity="0.9"/>
+    <polygon points="64,88 76,100 64,112 52,100" opacity="0.9"/>
+    
+    <!-- Side diamonds -->
+    <polygon points="16,64 28,52 40,64 28,76" opacity="0.9"/>
+    <polygon points="112,64 100,52 88,64 100,76" opacity="0.9"/>
+  </g>
+  
+  <!-- Enhanced grid overlay with more detail -->
+  <g opacity="0.15" stroke="#d1d1d1" stroke-width="0.3">
+    <!-- Fine grid lines -->
+    <line x1="0" y1="16" x2="128" y2="16"/>
+    <line x1="0" y1="32" x2="128" y2="32"/>
+    <line x1="0" y1="48" x2="128" y2="48"/>
+    <line x1="0" y1="64" x2="128" y2="64"/>
+    <line x1="0" y1="80" x2="128" y2="80"/>
+    <line x1="0" y1="96" x2="128" y2="96"/>
+    <line x1="0" y1="112" x2="128" y2="112"/>
+    
+    <line x1="16" y1="0" x2="16" y2="128"/>
+    <line x1="32" y1="0" x2="32" y2="128"/>
+    <line x1="48" y1="0" x2="48" y2="128"/>
+    <line x1="64" y1="0" x2="64" y2="128"/>
+    <line x1="80" y1="0" x2="80" y2="128"/>
+    <line x1="96" y1="0" x2="96" y2="128"/>
+    <line x1="112" y1="0" x2="112" y2="128"/>
+  </g>
+  
+  <!-- Additional neon accent lines for more glow -->
+  <g stroke="#ff6b6b" stroke-width="1" opacity="0.6" filter="url(#neonGlow)">
+    <line x1="20" y1="20" x2="108" y2="20"/>
+    <line x1="20" y1="108" x2="108" y2="108"/>
+    <line x1="20" y1="20" x2="20" y2="108"/>
+    <line x1="108" y1="20" x2="108" y2="108"/>
+  </g>
+</svg>
