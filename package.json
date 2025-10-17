@@ -4,6 +4,10 @@
   "description": "Color theme matching the vibe of the Tron: Ares movie",
   "version": "0.1.0",
   "publisher": "eschalk0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/etienneschalk/tron-ares-vscode-theme.git"
+  },
   "engines": {
     "vscode": "^1.105.0"
   },
