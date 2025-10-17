@@ -6,6 +6,13 @@
 
 A dark VS Code theme inspired by the aesthetic of Tron: Ares movie, featuring a red and dark color scheme that creates an immersive coding experience.
 
+<div align="center">
+
+Available on:
+[VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=eschalk0.tron-ares) • [Open VSX Registry](https://open-vsx.org/extension/eschalk0/tron-ares)
+
+</div>
+
 ## Features
 
 - Dark theme optimized for long coding sessions
